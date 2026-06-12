@@ -203,15 +203,15 @@
           <div class="content-area">
             <div class="contact-block text-center">
               <h3 class="fancy no-text-padding">Our Next Event</h3>
-              <h4 class="fancy no-text-padding">Glitz & Glam Dinner</h4>
+              <h4 class="fancy no-text-padding"><a href="#" id="myBtn">Glitz & Glam Dinner</a></h4>
             </div>
             <div class="contact-block text-center">
-              <h3 class="fancy no-text-padding">June 27, 2026. 17:00</h3> 
+              <h3 class="fancy no-text-padding">June 27, 2026. 17:00</h3>
               <h4 id="demo" class="fancy no-text-padding">... Calculating ...</h4>
             </div>
             <div class="contact-block text-center">
               <h3 class="fancy no-text-padding">USD$35</h3>
-              <h4 class="fancy no-text-padding" target="_blank"><a href="https://forms.gle/XzVokBcY8VqRD9XX7">Click to Sign Up</a></h4>
+              <h4 class="fancy no-text-padding"><a href="https://forms.gle/XzVokBcY8VqRD9XX7" target="_blank">Click to RSVP</a></h4>
             </div>
           </div>
         </div>
@@ -316,7 +316,7 @@
                 <p>
                   Registration adds you to our database and allows us to keep you informed about our next events and updates.
                 </p><br><br>
-                <button onclick="location.href='https://forms.gle/cU8vMjnaP5dPuNJ88'" target="_blank" type="button">
+                <button onclick="window.open('https://forms.gle/cU8vMjnaP5dPuNJ88', '_blank')" type="button">
                   Sign Up
                 </button>
                 Ignite your Empire
@@ -382,6 +382,28 @@
         </div>
       </section>
     </footer>
+
+    <div class="container">
+      <div id="myModal" class="modal">
+
+        <div class="modal-content">
+          <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1781277966/Glitz_Glam_poster_wxmcs9.jpg">
+          <div class="modal-buttons">
+            <button onclick="window.open('https://forms.gle/XzVokBcY8VqRD9XX7', '_blank')" type="button">
+              Click to RSVP
+            </button>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <button onclick="modalClose()" type="button">
+              Close
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/next-event.js"></script>

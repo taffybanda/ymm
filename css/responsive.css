@@ -126,12 +126,20 @@
 }
 
 @media screen and (max-width: 599px) {
+  #next-event .contact-block {
+    padding-top: 2em;
+  }
+
   .gallery-image {
     height: 70vh;
   }
 
   .domi .hero-spread {
     margin-top: 30em;
+  }
+
+  .modal-content img {
+    height: 50vh;
   }
 }
 
