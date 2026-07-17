@@ -1,0 +1,16 @@
+        <div id="next-event" class="container top-padding">
+          <div class="content-area">
+            <div class="contact-block text-center">
+              <h3 class="fancy no-text-padding">Our Next Event</h3>
+              <h4 class="fancy no-text-padding"><a href="#" id="myBtn">Glitz & Glam Dinner</a></h4>
+            </div>
+            <div class="contact-block text-center">
+              <h3 class="fancy no-text-padding">June 27, 2026. 17:00</h3>
+              <h4 id="demo" class="fancy no-text-padding">... Calculating ...</h4>
+            </div>
+            <div class="contact-block text-center">
+              <h3 class="fancy no-text-padding">USD$35</h3>
+              <h4 class="fancy no-text-padding"><a href="https://forms.gle/XzVokBcY8VqRD9XX7" target="_blank">Click to RSVP</a></h4>
+            </div>
+          </div>
+        </div>
