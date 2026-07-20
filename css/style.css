@@ -216,7 +216,7 @@ mobile-navigation ul li a {
 .navbar {
   display: inline-block;
   height: 60px;
-  width: 380px;
+  width: 440px;
   margin-top: 10px;
   z-index: 9999;
   position: fixed;
@@ -245,12 +245,18 @@ mobile-navigation ul li a {
 .contacts ul,
 .footer-area ul {
   margin-top: 0px;
-  padding-left: 0;
+  padding-left: 0px;
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  vertical-align: middle;
+}
+
+.navbar ul {
+  padding-top: 5px;
+  margin-left: -5px;
 }
 
 main {
