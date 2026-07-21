@@ -44,6 +44,159 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <meta property="og:image" content="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1772730994/og_home_qqezmj.jpg" />
+
+    <style>
+      /* Team / community profile cards - scoped to community.html */
+      .group-subtitle {
+        max-width: 700px;
+        margin: 0.5em auto 0;
+      }
+
+      .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 2.5em;
+        grid-gap: 1em;
+      }
+
+      .team-card {
+        width: 29%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #fff;
+        border: 1px solid var(--accent-brighter);
+        border-radius: 20px;
+        padding: 18px;
+        box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
+        transition: transform 0.2s ease;
+      }
+
+      .team-card:hover {
+        transform: translateY(-4px);
+      }
+
+      .team-photo {
+        flex: 0 0 80px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 1px solid var(--accent-brighter);
+        background-color: #e5e5e5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        color: var(--accent-color);
+        font-size: 28px;
+      }
+
+      .team-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .team-info {
+        margin-left: 10px;
+      }
+
+      .team-info h5 {
+        margin: 0 0 2px 0;
+      }
+
+      .team-info h6 {
+        margin: 0 0 8px 0;
+        color: #D9B391;
+      }
+
+      .team-social {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.95em;
+        font-weight: 600;
+        color: #000;
+      }
+
+      .team-social:hover {
+        color: var(--accent-color);
+      }
+
+      .team-social.disabled {
+        color: #A9A9A9;
+        font-style: italic;
+        font-weight: 400;
+        pointer-events: none;
+      }
+
+      .coming-soon-box {
+        margin-top: 2em;
+        padding: 2.5em;
+        border: 1px var(--accent-brighter);
+        border-radius: 20px;
+        background: #fff;
+      }
+
+      .join-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 2.5em;
+      }
+
+      .join-card {
+        width: 42%;
+        background: #fff;
+        border: 1px solid var(--accent-brighter);
+        border-radius: 20px;
+        padding: 2em;
+        text-align: center;
+        box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
+      }
+
+      .join-card p {
+        margin: 10px 0 20px 0;
+      }
+
+      @media screen and (max-width: 900px) {
+        .join-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .join-card {
+          width: 80%;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        .join-card {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 1080px) {
+        .team-card {
+          flex-basis: calc((100% - 25px) / 2);
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .team-card {
+          flex-basis: 100%;
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -214,10 +367,10 @@
               </div>
               <br />
               <p>
-                Fuelled by the notion of being the best version of myself in all circumstances, being part of fulfilling a vision or the bigger picture is what gets me up in the morning. My passion lies in diplomacy, brand perception, and professional development, where I find fulfillment in engaging with fellow young people and future leaders.
+                An award-winning Business Development and Growth professional, thought leader, speaker, and community builder passionate about empowering young professionals, intrapreneurs and entrepreneurs to reach their full potential. She has built a career centered on strategic relationship building, leadership, and sustainable growth.
               </p>
               <p>
-                From a young age, I’ve been captivated by the power of words and the art of communication, guiding my journey as a Master of Ceremonies, Keynote Speaker, and Content Writer. My experience as an Executive Assistant to senior management has revealed what makes great leaders thrive, and I aspire to see my peers and I flourish in our own paths.
+                As the Founder of Young Moguls Mixer, Nicole leads a growing community dedicated to fostering meaningful connections, professional development, and collaboration among emerging leaders. Through her work, she champions the idea that success is accelerated through intentional networking, continuous learning, and the courage to pursue purpose-driven opportunities.
               </p>
               <br />
             </div>
@@ -236,33 +389,313 @@
           </div>
         </div>
       </section>
-      <section class="big-why full-padding">
+
+      <section class="volunteers bottom-padding" id="volunteers">
         <div class="container">
           <div class="title-area">
-            <h2 class="text-center">
-              The <span class="fancy">Big Why</span>
-            </h2>
+            <h2 class="text-center">Community <span class="fancy">Champions</span></h2>
+            <p class="text-center group-subtitle">
+              Our volunteers are the heartbeat of YMM<br/>The hands and hearts that power every event behind the scenes.
+            </p>
           </div>
-          <div class="content-area">
-            <div class="quote-area">
-              <div class="quote-image">
-                <img loading="lazy" src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1750887104/ymm/media/why.webp">
+          <div class="team-grid">
+            <div class="team-card">
+              <!-- Photo: Thando -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1784635961/ymm/team/Thando_First.jpg">
               </div>
-              <div class="quote-text text-center">
-                <h5>
-                  "I hope that after attending these events, you feel <span>inspired</span> and <span>connected</span> to a <span>supportive community</span>"
-                  <br />
-                </h5>
-                <h6>- <span class="fancy">Nicole Duma</span></h6>
+              <div class="team-info">
+                <h5 class="no-text-padding">Thando</h5>
+                <h6 class="no-text-padding">Community Champion</h6>
+                <a href="https://www.linkedin.com/in/thando-mloyi-412676263/" target="_blank" class="team-social" title="Connect with Thando on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
               </div>
             </div>
-            <div class="text-area">
-              <p>
-                The motivation and idea behind the Young Moguls Mixer came to me after I had an interesting conversation with a young professional I met at a networking event. One of the things we agreed on, and the reason why we spent most of the event together was because we felt inexperienced. We found it quite difficult to engage in the numerous discussions held by people with considerably longer experience in the corporate sector. It wasn’t that they were unapproachable; rather, it was only that we felt...small.
-              </p>
-              <p>
-                It is because of this that young people often miss out on the genuine experience that networking offers. They feel inexperienced when engaging and interacting with other businessmen and women who have made it in the corporate world. My hope is that the Young Moguls Mixer will give young professionals and entrepreneurs the opportunity to interact with like-minded individuals who are aiming to become the next big names in the corporate world and are essentially on the same level as them.
-              </p><br />
+            <div class="team-card">
+              <!-- Photo: Ruth -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1784635963/ymm/team/Ruth_Second.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Ruth</h5>
+                <h6 class="no-text-padding">Community Champion</h6>
+                <a href="https://www.linkedin.com/in/ruth-tsanga-27789722a/" target="_blank" class="team-social" title="Connect with Ruth on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Sinqobile -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1784635962/ymm/team/Sinqobile_Third.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Sinqobile</h5>
+                <h6 class="no-text-padding">Community Champion</h6>
+                <a href="https://www.linkedin.com/in/sinqobile-nyasha-tagwireyi-93a527203/" target="_blank" class="team-social" title="Connect with Sinqobile on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Tom -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1784635961/ymm/team/Tom_Fourth.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Tom</h5>
+                <h6 class="no-text-padding">Community Champion</h6>
+                <a href="https://www.linkedin.com/in/tom-mbiba-31a886180/" target="_blank" class="team-social" title="Connect with Tom on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="speakers bottom-padding" id="speakers">
+        <div class="container">
+          <div class="title-area">
+            <h2 class="text-center">Guest <span class="fancy">Speakers</span> & Facilitators</h2>
+            <p class="text-center group-subtitle">
+              The voices and mentors who share their expertise to help our community grow.
+            </p>
+          </div>
+          <div class="team-grid">
+            <div class="team-card">
+              <!-- Photo: Kudakwashe Gumbie -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1784635959/ymm/team/1._Kuda_G.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Kudakwashe Gumbie</h5>
+                <h6 class="no-text-padding">Guest Speaker & Facilitator</h6>
+                <a href="https://www.linkedin.com/in/kudakwashe-gumbie-cfa-071799b9/" target="_blank" class="team-social" title="Connect with Kudakwashe Gumbie on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Tutsirai Jenje -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1784635960/ymm/team/2._Tutsirai_J.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Tutsirai Jenje</h5>
+                <h6 class="no-text-padding">Guest Speaker & Facilitator</h6>
+                <a href="https://www.linkedin.com/in/tutsirai-jenje/" target="_blank" class="team-social" title="Connect with Tutsirai Jenje on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Gcinumuzi Viki -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1784635959/ymm/team/3._Gcinumuzi_V.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Gcinumuzi Viki</h5>
+                <h6 class="no-text-padding">Guest Speaker & Facilitator</h6>
+                <a href="https://www.linkedin.com/in/gcinumuzi-viki-496b836b/" target="_blank" class="team-social" title="Connect with Gcinumuzi Viki on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Dr. Heriet Mhondiwa -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1784635959/ymm/team/4._Dr._Heriet.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Dr. Heriet Mhondiwa</h5>
+                <h6 class="no-text-padding">Guest Speaker & Facilitator</h6>
+                <a href="https://www.linkedin.com/in/dr-heriet-ca-z-aca-icaew-fcca-mbl-sa-msc-uk-dba-uk-52251855/" target="_blank" class="team-social" title="Connect with Dr. Heriet Mhondiwa on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Tinaye Makoni -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1784635959/ymm/team/5._Tinaye_M.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Tinaye Makoni</h5>
+                <h6 class="no-text-padding">Guest Speaker & Facilitator</h6>
+                <a href="https://www.linkedin.com/in/tinaye-makoni-bab69a117/" target="_blank" class="team-social" title="Connect with Tinaye Makoni on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Noxy Duri -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1784635964/ymm/team/6._Noxy_D.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Noxy Duri</h5>
+                <h6 class="no-text-padding">Guest Speaker & Facilitator</h6>
+                <a href="https://www.linkedin.com/in/noxolo-duri-9895b389/" target="_blank" class="team-social" title="Connect with Noxy Duri on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Tinotenda Borerwe -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1784635963/ymm/team/7._Tinoteda_B.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Tinotenda Borerwe</h5>
+                <h6 class="no-text-padding">Guest Speaker & Facilitator</h6>
+                <a href="https://www.linkedin.com/in/tborerwecw1/" target="_blank" class="team-social" title="Connect with Tinotenda Borerwe on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: John Sakala -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1784635960/ymm/team/8._John_S.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">John Sakala</h5>
+                <h6 class="no-text-padding">Guest Speaker & Facilitator</h6>
+                <a href="https://www.linkedin.com/in/john-josiah-sakala/" target="_blank" class="team-social" title="Connect with John Sakala on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Sani Mushakwe -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1784635961/ymm/team/9._Sani_Mushakwe.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Sani Mushakwe</h5>
+                <h6 class="no-text-padding">Guest Speaker & Facilitator</h6>
+                <span class="team-social disabled">
+                  <i class="fa-brands fa-linkedin"></i> Coming Soon
+                </span>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Joshua Masundah -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1784635959/ymm/team/10._Josh_Masundah.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Joshua Masundah</h5>
+                <h6 class="no-text-padding">Guest Speaker & Facilitator</h6>
+                <a href="https://www.linkedin.com/in/joshuamasundah/" target="_blank" class="team-social" title="Connect with Joshua Masundah on LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="creatives bottom-padding" id="creatives">
+        <div class="container">
+          <div class="title-area">
+            <h2 class="text-center">Creative <span class="fancy">& Media</span> Contributors</h2>
+            <p class="text-center group-subtitle">
+              The storytellers and creators who capture and share the YMM experience.
+            </p>
+          </div>
+          <div class="team-grid">
+            <div class="team-card">
+              <!-- Photo: Rejoice -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1784635962/ymm/team/Partner_-_Rejoice___Tapped_For_Growth.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Rejoice</h5>
+                <h6 class="no-text-padding">Tapped For Growth</h6>
+                <span class="team-social">
+                  <a href="https://tappedforgrowth.com/"><i class="fa-solid fa-globe"></i> Website</a>
+                </span>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Tutsirai -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1784635961/ymm/team/Partner_-_Tutsi___Electi_Photography.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Tutsirai</h5>
+                <h6 class="no-text-padding">ElectiPhotography</h6>
+                <span class="team-social">
+                  <a href="https://www.instagram.com/electi_photography/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </span>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Mitchell -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1784635964/ymm/team/Partner_-_Mitchell___CXXVII.jpg">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Mitchell</h5>
+                <h6 class="no-text-padding">CXXVII</h6>
+                <span class="team-social">
+                  <a href="https://www.instagram.com/officially_cxxvii/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </span>
+              </div>
+            </div>
+            <div class="team-card">
+              <!-- Photo: Taffy -->
+              <div class="team-photo">
+                <img src="https://res.cloudinary.com/mmm-legal-practitioners/image/upload/v1607962343/UI/Home/img/favicon.png">
+              </div>
+              <div class="team-info">
+                <h5 class="no-text-padding">Taffy Banda</h5>
+                <h6 class="no-text-padding">Utsanzi Interactive</h6>
+                <span class="team-social">
+                  <a href="https://uis.co.zw"><i class="fa-solid fa-globe"></i> Website</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners bottom-padding" id="partners">
+        <div class="container">
+          <div class="title-area">
+            <h2 class="text-center">Event <span class="fancy">Partners</span> & Collaborators</h2>
+          </div>
+          <div class="coming-soon-box text-center">
+            <p class="no-text-padding">Our growing list of event partners and collaborators will be announced soon.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="join-community bottom-padding" id="join-community">
+        <div class="container">
+          <div class="title-area">
+            <h2 class="text-center">Join <span class="fancy">Our Community</span></h2>
+            <p class="text-center group-subtitle">
+              Passionate about empowering young professionals and entrepreneurs? We'd love to hear from you.
+            </p>
+          </div>
+          <div class="join-buttons">
+            <div class="join-card">
+              <h5 class="no-text-padding">Become a Volunteer</h5>
+              <p>Help power our events from behind the scenes.</p>
+              <button onclick="window.open('https://forms.gle/vHm1uJQcf4rSZi166', '_blank')" type="button">
+                Become a Volunteer
+              </button>
+            </div>
+            <div class="join-card">
+              <h5 class="no-text-padding">Partner With YMM</h5>
+              <p>Sponsor, collaborate, speak, or support our events.</p>
+              <button onclick="window.open('https://forms.gle/eJM6T9gK5LoSqBUr7', '_blank')" type="button">
+                Partner with us
+              </button>
             </div>
           </div>
         </div>
