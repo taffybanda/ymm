@@ -19,7 +19,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://youngmogulsmixer.co.zw/events.html</loc>
+    <loc>https://youngmogulsmixer.co.zw/mixers.html</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>Monthly</changefreq>
     <priority>0.7</priority>
@@ -31,13 +31,31 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://youngmogulsmixer.co.zw/events/brunch-edition.html</loc>
+    <loc>https://youngmogulsmixer.co.zw/mixers/brunch-edition.html</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>Never</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://youngmogulsmixer.co.zw/events/winter-edition.html</loc>
+    <loc>https://youngmogulsmixer.co.zw/mixers/winter-edition.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>Never</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://youngmogulsmixer.co.zw/mixers/business-edition.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>Never</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://youngmogulsmixer.co.zw/mixers/glitz-glam.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>Never</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://youngmogulsmixer.co.zw/mixers/launch-edition.html</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>Never</changefreq>
     <priority>0.3</priority>
